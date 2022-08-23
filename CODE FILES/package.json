@@ -1,0 +1,60 @@
+{
+
+
+    "main": "index.html",
+    "name": "proton.core",
+    "description": "ProtonCORE By Proton Security",
+    "version": "00.00.00",
+    "keywords": [ "ProtonCORE", "Node-WebKit" ],
+
+
+    "maintainers":[{
+
+        "name": "Nikolai Kalashnikov",
+        "email": "proton.sec@outlook.com",
+        "web": "http://www.protonsec.com"
+
+     }],
+
+
+
+    "licenses": [{
+
+        "type": "MIT",
+        "url": "http://www.protonsec.com/license/MIT.lic"
+
+    }],
+
+
+    "window": {
+
+        "title": "ProtonCORE",
+        "icon": "FAVICON_32.png",
+        "toolbar": false,
+        "frame": false,
+        "position": "center",
+        "show_in_taskbar": true,
+        "resizable": false,
+        "show": true,
+        "transparent": true,
+
+
+        "width": 400,
+        "min_width": 400,
+        "max_width": 400,
+
+        "height": 600,
+        "min_height": 600,
+        "max_height": 600
+
+    },
+
+
+    "webkit": {
+
+        "plugin": true
+
+    }
+
+
+  }

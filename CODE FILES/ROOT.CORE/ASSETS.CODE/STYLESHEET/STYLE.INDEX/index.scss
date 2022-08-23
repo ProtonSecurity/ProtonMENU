@@ -1,0 +1,465 @@
+html, body {
+    border: none;
+    outline: none;
+
+    background-color: transparent;
+    color: #000;
+
+    margin: 0 0 0 0;
+}
+
+#APPWindow-Container {
+    border: none;
+    outline: none;
+    
+    background-color: #FFF;
+    color: #000;
+
+    margin: 0 0 0 0;
+    float: left;
+
+    width: 400px;
+    min-width: 400px;
+    max-width: 400px;
+
+    height: 600px;
+    min-height: 600px;
+    max-height: 600px;
+}
+
+#APPToolbar-Container {
+    border: none;
+    outline: none;
+    
+    background-color: #222;
+    color: #FFF;
+
+    margin: 0 0 0 0;
+    float: left;
+
+    width: 400px;
+    min-width: 400px;
+    max-width: 400px;
+
+    height: 40px;
+    min-height: 40px;
+    max-height: 40px;
+
+    #StartBTN-Icon {
+        margin: 5px 0 0 5px;
+        font-size: 30px;
+        color: #fff;
+        float: left;
+        user-select: none;
+    }
+
+    #StartBTN-Icon:hover {
+        color: #e1e1e1;
+        cursor: default;
+    }
+
+    #TitleSpan {
+        color: #FFF;
+
+        margin: 3px 0 0 15px;
+        float: left;
+
+        font-size: 30px;
+        text-transform: uppercase;
+        font-family: 'Bebas Neue', cursive;
+        cursor: default;
+        user-select: none;
+    }
+
+    #WindowControls {
+        border: none;
+        outline: none;
+    
+        background-color: #222;
+        color: #FFF;
+
+        margin: 0 0 0 0;
+        float: right;
+
+        width: 110px;
+        min-width: 110px;
+        max-width: 110px;
+
+        height: 40px;
+        min-height: 40px;
+        max-height: 40px;
+
+        #SearchTrigger-Wrapper {
+            border: none;
+            outline: none;
+            border: 1px solid #FFF;
+            border-radius: 3px;
+
+            background-color: #222;
+            color: #FFF;
+
+            margin: 5px 0 0 0;
+            float: left;
+            
+            width: 28px;
+            min-width: 28px;
+            max-width: 28px;
+
+            height: 28px;
+            min-height: 28px;
+            max-height: 28px;
+
+            user-select: none;
+        }
+
+        #SearchTrigger-Wrapper:hover {
+            border: 1px solid #e1e1e1;
+        }
+
+        #SearchTrigger-Wrapper:hover #SearchTrigger-Icon {
+            color: #e1e1e1;
+            cursor: default;
+        }
+
+        #SearchTrigger-Icon {
+            margin: 5px 0 0 5px;
+            font-size: 20px;
+            color: #FFF;
+            float: left;
+            user-select: none;
+        }
+
+        #WindowControl-CloseBTN {
+            border: none;
+            outline: none;
+    
+            background-color: #ff0000;
+            color: #FFF;
+
+            margin: 5px 5px 0 0;
+            float: right;
+
+            width: 30px;
+            min-width: 30px;
+            max-width: 30px;
+
+            height: 30px;
+            min-height: 30px;
+            max-height: 30px;
+        }
+
+        #WindowControl-CloseBTN:hover {
+            background-color: #c80000;
+        }
+
+        #WindowControl-MinimizeBTN {
+            border: none;
+            outline: none;
+    
+            background-color: #ff8000;
+            color: #FFF;
+
+            margin: 5px 5px 0 0;
+            float: right;
+
+            width: 30px;
+            min-width: 30px;
+            max-width: 30px;
+
+            height: 30px;
+            min-height: 30px;
+            max-height: 30px;
+        }
+
+        #WindowControl-MinimizeBTN:hover {
+            background-color: #cf6700;
+        }
+    }
+}
+
+#APPContainer-Left {
+    border: none;
+    outline: none;
+    border-left: 4px solid #222;
+    border-bottom: 4px solid #222;
+
+    background-color: #FFF;
+    color: #000;
+
+    margin: 0 0 0 0;
+    float: left;
+
+    width: 196px;
+    min-width: 196px;
+    max-width: 196px;
+
+    height: 556px;
+    min-height: 556px;
+    max-height: 556px;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    #EXEAPP-Container {
+        border: none;
+        outline: none;
+
+        background-color: #FFF;
+        color: #000;
+
+        margin: 0 0 0 0;
+        float: left;
+
+        width: 190px;
+        min-width: 190px;
+        max-width: 190px;
+
+        height: 40px;
+        min-height: 40px;
+        max-height: 40px;
+    }
+
+    #EXEAPP-Container:hover #EXEAPP-Wrapper {
+        background-color: #222;
+    }
+
+    #EXEAPP-Container:hover #EXEAPP-Icon {
+        color: #FFF;
+    }
+
+    #EXEAPP-Container:hover #EXEAPP-IconDev {
+        color: #FFF;
+    }
+
+    #EXEAPP-Container:hover #EXEAPP-Text {
+        font-weight: 600;
+    }
+
+    #EXEAPP-Text {
+        color: #000;
+
+        margin: 10px 0 0 10px;
+        float: left;
+
+        user-select: none;
+        font-size: 15px;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-family: 'Titillium Web', sans-serif;
+    }
+
+    #EXEAPP-Wrapper {
+        border: none;
+        outline: none;
+        border-radius: 4px;
+
+        background-color: #FFF;
+        color: #FFF;
+
+        margin: 5px 10px 0 0;
+        float: right;
+
+        width: 30px;
+        min-width: 30px;
+        max-width: 30px;
+
+        height: 30px;
+        min-height: 30px;
+        max-height: 30px;
+    }
+
+    #EXEAPP-Icon {
+        color: #222;
+        
+        margin: 5px 0 0 5px;
+        float: left;
+
+        font-size: 20px;
+    }
+
+    #EXEAPP-IconDev {
+        color: #222;
+        
+        margin: 5px 0 0 6.5px;
+        float: left;
+
+        font-size: 20px;
+    }
+
+    #ScrollSpacer {
+        background-color: #fff;
+        color: #fff;
+        width: 100px;
+        height: 1200px
+    }
+}
+
+#APPContainer-Right {
+    border: none;
+    outline: none;
+
+    background-color: #222;
+    color: #FFF;
+
+    margin: 0 0 0 0;
+    float: left;
+
+    width: 200px;
+    min-width: 200px;
+    max-width: 200px;
+
+    height: 560px;
+    min-height: 560px;
+    max-height: 560px;
+
+    #SearchContainer {
+        border: none;
+        outline: none;
+        display: block;
+
+        background-color: #222;
+        color: #FFF;
+
+        margin: 0 0 0 0;
+        float: left;
+        
+        width: 200px;
+        min-width: 200px;
+        max-width: 200px;
+
+        height: 40px;
+        min-height: 40px;
+        max-height: 40px;
+
+        #SearchInput-Text {
+            border: none;
+            outline: none;
+            padding-left: 10px;
+
+            background-color: #FFF;
+            color: #000;
+
+            margin: 5px 0 0 10px;
+            float: left;
+
+            width: 130px;
+            min-width: 130px;
+            max-width: 130px;
+
+            height: 28px;
+            min-height: 28px;
+            max-height: 28px;
+
+            user-select: none;
+            font-size: 15px;
+            text-transform: none;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        #SearchInput-BTN {
+            border: none;
+            outline: none;
+
+            background-color: #FFF;
+            color: #000;
+
+            margin: 5px 0 0 5px;
+            float: left;
+
+            width: 33px;
+            min-width: 33px;
+            max-width: 33px;
+
+            height: 30px;
+            min-height: 30px;
+            max-height: 30px;
+
+            font-size: 15px;
+            text-transform: uppercase;
+            font-family: 'Bebas Neue', cursive;
+        }
+    }
+
+    .SystemBTN-Container-1 {
+        margin: 20px 0 0 0;
+    }
+
+    .SystemBTN-Container-2 {
+        margin: 40px 0 0 0;
+    }
+
+    #SystemBTN-Container {
+        border: none;
+        outline: none;
+
+        background-color: #222;
+        color: #FFF;
+        
+        float: left;
+
+        width: 200px;
+        min-width: 200px;
+        max-width: 200px;
+        
+        height: 40px;
+        min-height: 40px;
+        max-height: 40px;
+    }
+
+    #SystemBTN-Text {
+        color: #FFF;
+
+        margin: 10px 0 0 10px;
+        float: left;
+
+        font-size: 18px;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-family: 'Roboto Condensed', sans-serif;
+
+        user-select: none;
+        cursor: default;
+    }
+
+    #SystemBTN-IconWrapper {
+        border: none;
+        outline: none;
+
+        background-color: #222;
+        color: #000;
+
+        margin: 5px 10px 0 0;
+        float: right;
+
+        width: 30px;
+        min-width: 30px;
+        max-width: 30px;
+
+        height: 30px;
+        min-height: 30px;
+        max-height: 30px;
+    }
+
+    #SystemBTN-Icon {
+        color: #FFF;
+        margin: 3px 0 0 3px;
+        cursor: default;
+        user-select: none;
+    }
+
+    #SystemBTN-Container:hover #SystemBTN-Icon {
+        color: #222;
+    }
+
+    #SystemBTN-Container:hover #SystemBTN-IconWrapper {
+        background-color: #fff;
+        border-radius: 4px;
+    }
+
+    #SystemBTN-Container:hover #SystemBTN-Text {
+        color: #fff;
+        margin: 10px 0 0 10px;
+        font-size: 19px;
+        transition: .1s;
+    }
+}

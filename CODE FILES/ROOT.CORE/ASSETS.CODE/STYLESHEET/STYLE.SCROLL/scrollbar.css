@@ -1,0 +1,14 @@
+/* Works on Chrome, Edge, and Safari */
+#APPContainer-Left::-webkit-scrollbar {
+  width: 12px;
+}
+
+#APPContainer-Left::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+#APPContainer-Left::-webkit-scrollbar-thumb {
+  background-color: #222;
+  border-radius: 0;
+  border: 2px solid #fff;
+}/*# sourceMappingURL=scrollbar.css.map */

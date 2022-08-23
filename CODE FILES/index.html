@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="EN-US">
+    <head>
+        <title> PROTON MENU V00.00.00 </title>
+
+        <!-- Google Material Icon Fonts - Remote Hosted CDN -->
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+        <!-- FontAwesome Icon fonts - Remote Hosted CDN -->
+        <script type="text/javascript" src="https://kit.fontawesome.com/076aceaf59.js" crossorigin="anonymous"></script>
+
+        <!-- Google Fonts Web Font - Remote Hosted CDN -->
+
+        <!-- font-family: 'Bebas Neue', cursive; -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+        <!-- font-family: 'Roboto Condensed', sans-serif; -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+        
+        <!-- font-family: 'Titillium Web', sans-serif; -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+        <!-- font-family: 'Oswald', sans-serif; -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="ROOT.CORE/ASSETS.CODE/STYLESHEET/STYLE.INDEX/index.css" />
+        <link rel="stylesheet" type="text/css" href="ROOT.CORE/ASSETS.CODE/STYLESHEET/STYLE.INDEX/index.css" />
+        <link rel="stylesheet" type="text/css" href="ROOT.CORE/ASSETS.CODE/STYLESHEET/STYLE.ACCORD/acordion.css"  />
+        <link rel="stylesheet" type="text/css" href="ROOT.CORE/ASSETS.CODE/STYLESHEET/STYLE.SCROLL/scrollbar.css" />
+
+        <script type="text/javascript" src="ROOT.CORE/ASSETS.CODE/JAVASCRIPT/"></script>
+        <script type="text/javascript" src="ROOT.CORE/ASSETS.CODE/JAVASCRIPT/"></script>
+    </head>
+    <body lang="EN-US">
+        <window name="APPWindow-Container" id="APPWindow-Container" class="APPWindow-Container">
+            <nav name="APPToolbar-Container" id="APPToolbar-Container" class="APPToolbar-Container">
+                <i name="StartBTN-Icon" id="StartBTN-Icon" class="fa-brands fa-microsoft"></i>
+
+                <span name="TitleSpan" id="TitleSpan" class="TitleSpan"> Proton Menu </span>
+                
+                <div name="WindowControls" id="WindowControls" class="WindowControls">
+                    <div name="SearchTrigger-Wrapper" id="SearchTrigger-Wrapper" class="SearchTrigger-Wrapper" onclick="SearchTrigger()">
+                        <span name="SearchTrigger-Icon" id="SearchTrigger-Icon" class="material-icons" onclick="SearchTrigger()"> search </span>
+                    </div>
+
+                    <input type="button" value="" name="WindowControl-CloseBTN" id="WindowControl-CloseBTN" class="WindowControl-CloseBTN" onclick="window.close(true)" />
+                    <input type="button" value="" name="WindowControl-MinimizeBTN" id="WindowControl-MinimizeBTN" class="WindowControl-MinimizeBTN" />
+                </div>
+            </nav>
+
+            <container name="APPContainer-Left" id="APPContainer-Left" class="APPContainer-Left">
+                <button name="AccordButton" id="AccordButton" class="accordion">Favorites</button>
+                <div name="AccordPanel" id="AccordPanel" class="panel">
+                    <div name="EXEAPP-Container" id="EXEAPP-Container" class="EXEAPP-Container">
+                        <span name="EXEAPP-Text" id="EXEAPP-Text" class="EXEAPP-Text"> Chromium </span>
+
+                        <span name="EXEAPP-Wrapper" id="EXEAPP-Wrapper" class="EXEAPP-Wrapper">
+                            <i name="EXEAPP-Icon" id="EXEAPP-Icon" class="fa-brands fa-chrome"></i>
+                        </span>
+                    </div>
+
+                    <div name="EXEAPP-Container" id="EXEAPP-Container" class="EXEAPP-Container">
+                        <span name="EXEAPP-Text" id="EXEAPP-Text" class="EXEAPP-Text"> Phyrox </span>
+
+                        <span name="EXEAPP-Wrapper" id="EXEAPP-Wrapper" class="EXEAPP-Wrapper">
+                            <i name="EXEAPP-Icon" id="EXEAPP-Icon" class="fa-brands fa-firefox"></i>
+                        </span>
+                    </div>
+
+                    <div name="EXEAPP-Container" id="EXEAPP-Container" class="EXEAPP-Container">
+                        <span name="EXEAPP-Text" id="EXEAPP-Text" class="EXEAPP-Text"> Notepad++ </span>
+
+                        <span name="EXEAPP-Wrapper" id="EXEAPP-Wrapper" class="EXEAPP-Wrapper">
+                            <i name="EXEAPP-IconDev" id="EXEAPP-IconDev" class="fa-brands fa-dev"></i>
+                        </span>
+                    </div>
+
+                    <div name="EXEAPP-Container" id="EXEAPP-Container" class="EXEAPP-Container">
+                        <span name="EXEAPP-Text" id="EXEAPP-Text" class="EXEAPP-Text"> NSIS </span>
+
+                        <span name="EXEAPP-Wrapper" id="EXEAPP-Wrapper" class="EXEAPP-Wrapper">
+                            <i name="EXEAPP-IconDev" id="EXEAPP-IconDev" class="fa-brands fa-dev"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <button name="AccordButton" id="AccordButton" class="accordion">Accesibility</button>
+                <div name="AccordPanel" id="AccordPanel" class="panel">
+                    
+                </div>
+
+                <button name="AccordButton" id="AccordButton" class="accordion">Development</button>
+                <div name="AccordPanel" id="AccordPanel" class="panel">
+                    <div name="EXEAPP-Container" id="EXEAPP-Container" class="EXEAPP-Container">
+                        <span name="EXEAPP-Text" id="EXEAPP-Text" class="EXEAPP-Text"> Android Studio </span>
+
+                        <span name="EXEAPP-Wrapper" id="EXEAPP-Wrapper" class="EXEAPP-Wrapper">
+                            <i name="EXEAPP-IconDev" id="EXEAPP-IconDev" class="fa-brands fa-dev"></i>
+                        </span>
+                    </div>
+
+                    <div name="EXEAPP-Container" id="EXEAPP-Container" class="EXEAPP-Container">
+                        <span name="EXEAPP-Text" id="EXEAPP-Text" class="EXEAPP-Text"> DBeaver </span>
+
+                        <span name="EXEAPP-Wrapper" id="EXEAPP-Wrapper" class="EXEAPP-Wrapper">
+                            <i name="EXEAPP-IconDev" id="EXEAPP-IconDev" class="fa-brands fa-dev"></i>
+                        </span>
+                    </div>
+
+                    <div name="EXEAPP-Container" id="EXEAPP-Container" class="EXEAPP-Container">
+                        <span name="EXEAPP-Text" id="EXEAPP-Text" class="EXEAPP-Text"> INNO Setup </span>
+
+                        <span name="EXEAPP-Wrapper" id="EXEAPP-Wrapper" class="EXEAPP-Wrapper">
+                            <i name="EXEAPP-IconDev" id="EXEAPP-IconDev" class="fa-brands fa-dev"></i>
+                        </span>
+                    </div>
+
+                    <div name="EXEAPP-Container" id="EXEAPP-Container" class="EXEAPP-Container">
+                        <span name="EXEAPP-Text" id="EXEAPP-Text" class="EXEAPP-Text"> Notepad++ </span>
+
+                        <span name="EXEAPP-Wrapper" id="EXEAPP-Wrapper" class="EXEAPP-Wrapper">
+                            <i name="EXEAPP-IconDev" id="EXEAPP-IconDev" class="fa-brands fa-dev"></i>
+                        </span>
+                    </div>
+
+                    <div name="EXEAPP-Container" id="EXEAPP-Container" class="EXEAPP-Container">
+                        <span name="EXEAPP-Text" id="EXEAPP-Text" class="EXEAPP-Text"> NSIS </span>
+
+                        <span name="EXEAPP-Wrapper" id="EXEAPP-Wrapper" class="EXEAPP-Wrapper">
+                            <i name="EXEAPP-IconDev" id="EXEAPP-IconDev" class="fa-brands fa-dev"></i>
+                        </span>
+                    </div>
+
+                    <div name="EXEAPP-Container" id="EXEAPP-Container" class="EXEAPP-Container">
+                        <span name="EXEAPP-Text" id="EXEAPP-Text" class="EXEAPP-Text"> Oracle JDK </span>
+
+                        <span name="EXEAPP-Wrapper" id="EXEAPP-Wrapper" class="EXEAPP-Wrapper">
+                            <i name="EXEAPP-IconDev" id="EXEAPP-IconDev" class="fa-brands fa-dev"></i>
+                        </span>
+                    </div>
+
+                    <div name="EXEAPP-Container" id="EXEAPP-Container" class="EXEAPP-Container">
+                        <span name="EXEAPP-Text" id="EXEAPP-Text" class="EXEAPP-Text"> SmartGIT </span>
+
+                        <span name="EXEAPP-Wrapper" id="EXEAPP-Wrapper" class="EXEAPP-Wrapper">
+                            <i name="EXEAPP-IconDev" id="EXEAPP-IconDev" class="fa-brands fa-dev"></i>
+                        </span>
+                    </div>
+
+                    <div name="EXEAPP-Container" id="EXEAPP-Container" class="EXEAPP-Container">
+                        <span name="EXEAPP-Text" id="EXEAPP-Text" class="EXEAPP-Text"> Tabby </span>
+
+                        <span name="EXEAPP-Wrapper" id="EXEAPP-Wrapper" class="EXEAPP-Wrapper">
+                            <i name="EXEAPP-IconDev" id="EXEAPP-IconDev" class="fa-brands fa-dev"></i>
+                        </span>
+                    </div>
+
+                    <div name="EXEAPP-Container" id="EXEAPP-Container" class="EXEAPP-Container">
+                        <span name="EXEAPP-Text" id="EXEAPP-Text" class="EXEAPP-Text"> VSCode </span>
+
+                        <span name="EXEAPP-Wrapper" id="EXEAPP-Wrapper" class="EXEAPP-Wrapper">
+                            <i name="EXEAPP-IconDev" id="EXEAPP-IconDev" class="fa-brands fa-dev"></i>
+                        </span>
+                    </div>
+
+                    <div name="EXEAPP-Container" id="EXEAPP-Container" class="EXEAPP-Container">
+                        <span name="EXEAPP-Text" id="EXEAPP-Text" class="EXEAPP-Text"> VSCodium </span>
+
+                        <span name="EXEAPP-Wrapper" id="EXEAPP-Wrapper" class="EXEAPP-Wrapper">
+                            <i name="EXEAPP-IconDev" id="EXEAPP-IconDev" class="fa-brands fa-dev"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <button name="AccordButton" id="AccordButton" class="accordion">Education</button>
+                <div name="AccordPanel" id="AccordPanel" class="panel">
+                    
+                </div>
+
+                <button name="AccordButton" id="AccordButton" class="accordion">Games</button>
+                <div name="AccordPanel" id="AccordPanel" class="panel">
+                    
+                </div>
+
+                <button name="AccordButton" id="AccordButton" class="accordion">Graphics</button>
+                <div name="AccordPanel" id="AccordPanel" class="panel">
+                    
+                </div>
+
+                <button name="AccordButton" id="AccordButton" class="accordion">Internet</button>
+                <div name="AccordPanel" id="AccordPanel" class="panel">
+                    <div name="EXEAPP-Container" id="EXEAPP-Container" class="EXEAPP-Container">
+                        <span name="EXEAPP-Text" id="EXEAPP-Text" class="EXEAPP-Text"> Beaker Browser </span>
+
+                        <span name="EXEAPP-Wrapper" id="EXEAPP-Wrapper" class="EXEAPP-Wrapper">
+                            <i name="EXEAPP-Icon" id="EXEAPP-Icon" class="fa-solid fa-earth-americas"></i>
+                        </span>
+                    </div>
+
+                    <div name="EXEAPP-Container" id="EXEAPP-Container" class="EXEAPP-Container">
+                        <span name="EXEAPP-Text" id="EXEAPP-Text" class="EXEAPP-Text"> Chromium </span>
+
+                        <span name="EXEAPP-Wrapper" id="EXEAPP-Wrapper" class="EXEAPP-Wrapper">
+                            <i name="EXEAPP-Icon" id="EXEAPP-Icon" class="fa-brands fa-chrome"></i>
+                        </span>
+                    </div>
+
+                    <div name="EXEAPP-Container" id="EXEAPP-Container" class="EXEAPP-Container">
+                        <span name="EXEAPP-Text" id="EXEAPP-Text" class="EXEAPP-Text"> Phyrox </span>
+
+                        <span name="EXEAPP-Wrapper" id="EXEAPP-Wrapper" class="EXEAPP-Wrapper">
+                            <i name="EXEAPP-Icon" id="EXEAPP-Icon" class="fa-brands fa-firefox"></i>
+                        </span>
+                    </div>
+                    
+                    <div name="EXEAPP-Container" id="EXEAPP-Container" class="EXEAPP-Container">
+                        <span name="EXEAPP-Text" id="EXEAPP-Text" class="EXEAPP-Text"> WaterFox </span>
+
+                        <span name="EXEAPP-Wrapper" id="EXEAPP-Wrapper" class="EXEAPP-Wrapper">
+                            <i name="EXEAPP-Icon" id="EXEAPP-Icon" class="fa-solid fa-earth-americas"></i>
+                        </span>
+                    </div>
+
+                </div>
+
+                <button name="AccordButton" id="AccordButton" class="accordion">Media</button>
+                <div name="AccordPanel" id="AccordPanel" class="panel">
+                    <div name="EXEAPP-Container" id="EXEAPP-Container" class="EXEAPP-Container">
+                        <span name="EXEAPP-Text" id="EXEAPP-Text" class="EXEAPP-Text"> Emby Theater </span>
+
+                        <span name="EXEAPP-Wrapper" id="EXEAPP-Wrapper" class="EXEAPP-Wrapper">
+                            <i name="EXEAPP-Icon" id="EXEAPP-Icon" class="fa-solid fa-circle-play"></i>
+                        </span>
+                    </div>
+                    
+                    <div name="EXEAPP-Container" id="EXEAPP-Container" class="EXEAPP-Container">
+                        <span name="EXEAPP-Text" id="EXEAPP-Text" class="EXEAPP-Text"> Molotov </span>
+
+                        <span name="EXEAPP-Wrapper" id="EXEAPP-Wrapper" class="EXEAPP-Wrapper">
+                            <i name="EXEAPP-Icon" id="EXEAPP-Icon" class="fa-solid fa-circle-play"></i>
+                        </span>
+                    </div>
+
+                    <div name="EXEAPP-Container" id="EXEAPP-Container" class="EXEAPP-Container">
+                        <span name="EXEAPP-Text" id="EXEAPP-Text" class="EXEAPP-Text"> VLC Player </span>
+
+                        <span name="EXEAPP-Wrapper" id="EXEAPP-Wrapper" class="EXEAPP-Wrapper">
+                            <i name="EXEAPP-Icon" id="EXEAPP-Icon" class="fa-solid fa-circle-play"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <button name="AccordButton" id="AccordButton" class="accordion">Office</button>
+                <div name="AccordPanel" id="AccordPanel" class="panel">
+                    
+                </div>
+
+                <button name="AccordButton" id="AccordButton" class="accordion">Security</button>
+                <div name="AccordPanel" id="AccordPanel" class="panel">
+                    <div name="EXEAPP-Container" id="EXEAPP-Container" class="EXEAPP-Container">
+                        <span name="EXEAPP-Text" id="EXEAPP-Text" class="EXEAPP-Text"> CryptoMater </span>
+
+                        <span name="EXEAPP-Wrapper" id="EXEAPP-Wrapper" class="EXEAPP-Wrapper">
+                            <i name="EXEAPP-Icon" id="EXEAPP-IconDev" class="fa-solid fa-lock"></i>
+                        </span>
+                    </div>
+                    
+                    <div name="EXEAPP-Container" id="EXEAPP-Container" class="EXEAPP-Container">
+                        <span name="EXEAPP-Text" id="EXEAPP-Text" class="EXEAPP-Text"> Wireshark </span>
+
+                        <span name="EXEAPP-Wrapper" id="EXEAPP-Wrapper" class="EXEAPP-Wrapper">
+                            <i name="EXEAPP-Icon" id="EXEAPP-IconDev" class="fa-solid fa-lock"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <button name="AccordButton" id="AccordButton" class="accordion">Social</button>
+                <div name="AccordPanel" id="AccordPanel" class="panel">
+                    <div name="EXEAPP-Container" id="EXEAPP-Container" class="EXEAPP-Container">
+                        <span name="EXEAPP-Text" id="EXEAPP-Text" class="EXEAPP-Text"> Caprine </span>
+
+                        <span name="EXEAPP-Wrapper" id="EXEAPP-Wrapper" class="EXEAPP-Wrapper">
+                            <i name="EXEAPP-Icon" id="EXEAPP-IconDev" class="fa-solid fa-hashtag"></i>
+                        </span>
+                    </div>
+                    
+                    <div name="EXEAPP-Container" id="EXEAPP-Container" class="EXEAPP-Container">
+                        <span name="EXEAPP-Text" id="EXEAPP-Text" class="EXEAPP-Text"> Discord </span>
+
+                        <span name="EXEAPP-Wrapper" id="EXEAPP-Wrapper" class="EXEAPP-Wrapper">
+                            <i name="EXEAPP-Icon" id="EXEAPP-IconDev" class="fa-solid fa-hashtag"></i>
+                        </span>
+                    </div>
+
+                    <div name="EXEAPP-Container" id="EXEAPP-Container" class="EXEAPP-Container">
+                        <span name="EXEAPP-Text" id="EXEAPP-Text" class="EXEAPP-Text"> Signal </span>
+
+                        <span name="EXEAPP-Wrapper" id="EXEAPP-Wrapper" class="EXEAPP-Wrapper">
+                            <i name="EXEAPP-Icon" id="EXEAPP-IconDev" class="fa-solid fa-hashtag"></i>
+                        </span>
+                    </div>
+                    
+                    <div name="EXEAPP-Container" id="EXEAPP-Container" class="EXEAPP-Container">
+                        <span name="EXEAPP-Text" id="EXEAPP-Text" class="EXEAPP-Text"> Skype </span>
+
+                        <span name="EXEAPP-Wrapper" id="EXEAPP-Wrapper" class="EXEAPP-Wrapper">
+                            <i name="EXEAPP-Icon" id="EXEAPP-IconDev" class="fa-solid fa-hashtag"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <button name="AccordButton" id="AccordButton" class="accordion">Utilities</button>
+                <div name="AccordPanel" id="AccordPanel" class="panel">
+                    <div name="EXEAPP-Container" id="EXEAPP-Container" class="EXEAPP-Container">
+                        <span name="EXEAPP-Text" id="EXEAPP-Text" class="EXEAPP-Text"> Ferdi </span>
+
+                        <span name="EXEAPP-Wrapper" id="EXEAPP-Wrapper" class="EXEAPP-Wrapper">
+                            <i name="EXEAPP-Icon" id="EXEAPP-Icon" class="fa-solid fa-wrench"></i>
+                        </span>
+                    </div>
+                    
+                    <div name="EXEAPP-Container" id="EXEAPP-Container" class="EXEAPP-Container">
+                        <span name="EXEAPP-Text" id="EXEAPP-Text" class="EXEAPP-Text"> NextCloud </span>
+
+                        <span name="EXEAPP-Wrapper" id="EXEAPP-Wrapper" class="EXEAPP-Wrapper">
+                            <i name="EXEAPP-Icon" id="EXEAPP-Icon" class="fa-solid fa-wrench"></i>
+                        </span>
+                    </div>
+
+                    <div name="EXEAPP-Container" id="EXEAPP-Container" class="EXEAPP-Container">
+                        <span name="EXEAPP-Text" id="EXEAPP-Text" class="EXEAPP-Text"> QBittorrent </span>
+
+                        <span name="EXEAPP-Wrapper" id="EXEAPP-Wrapper" class="EXEAPP-Wrapper">
+                            <i name="EXEAPP-Icon" id="EXEAPP-Icon" class="fa-solid fa-wrench"></i>
+                        </span>
+                    </div>
+                    
+                    <div name="EXEAPP-Container" id="EXEAPP-Container" class="EXEAPP-Container">
+                        <span name="EXEAPP-Text" id="EXEAPP-Text" class="EXEAPP-Text"> Rambox </span>
+
+                        <span name="EXEAPP-Wrapper" id="EXEAPP-Wrapper" class="EXEAPP-Wrapper">
+                            <i name="EXEAPP-Icon" id="EXEAPP-Icon" class="fa-solid fa-wrench"></i>
+                        </span>
+                    </div>
+
+                    <div name="EXEAPP-Container" id="EXEAPP-Container" class="EXEAPP-Container">
+                        <span name="EXEAPP-Text" id="EXEAPP-Text" class="EXEAPP-Text"> Transmission </span>
+
+                        <span name="EXEAPP-Wrapper" id="EXEAPP-Wrapper" class="EXEAPP-Wrapper">
+                            <i name="EXEAPP-Icon" id="EXEAPP-Icon" class="fa-solid fa-wrench"></i>
+                        </span>
+                    </div>
+                    
+                    <div name="EXEAPP-Container" id="EXEAPP-Container" class="EXEAPP-Container">
+                        <span name="EXEAPP-Text" id="EXEAPP-Text" class="EXEAPP-Text"> UELI </span>
+
+                        <span name="EXEAPP-Wrapper" id="EXEAPP-Wrapper" class="EXEAPP-Wrapper">
+                            <i name="EXEAPP-Icon" id="EXEAPP-Icon" class="fa-solid fa-wrench"></i>
+                        </span>
+                    </div>
+                </div>
+
+
+                <div id="ScrollSpacer"></div>
+            </container>
+
+            <container name="APPContainer-Right" id="APPContainer-Right" class="APPContainer-Right">
+                <form name="SearchContainer" id="SearchContainer" class="SearchContainer" onsubmit="readCommand()">
+                    <input type="text" placeholder="Search..." name="SearchInput-Text" id="SearchInput-Text" class="SearchInput-Text" />
+                    <input type="button" value="OK" name="SearchInput-BTN" id="SearchInput-BTN" class="SearchInput-BTN" />
+                </form>
+
+                <div name="SystemBTN-Container" id="SystemBTN-Container" class="SystemBTN-Container-1">
+                    <span name="SystemBTN-Text" id="SystemBTN-Text" class="SystemBTN-Text"> DOCUMENTS </span>
+
+                    <span name="SystemBTN-IconWrapper" id="SystemBTN-IconWrapper" class="SystemBTN-IconWrapper">
+                        <span name="SystemBTN-Icon" id="SystemBTN-Icon" class="material-icons"> article </span>
+                    </span>
+                </div>
+
+                <div name="SystemBTN-Container" id="SystemBTN-Container" class="SystemBTN-Container">
+                    <span name="SystemBTN-Text" id="SystemBTN-Text" class="SystemBTN-Text"> DOWNLOADS </span>
+
+                    <span name="SystemBTN-IconWrapper" id="SystemBTN-IconWrapper" class="SystemBTN-IconWrapper">
+                        <span name="SystemBTN-Icon" id="SystemBTN-Icon" class="material-icons"> download </span>
+                    </span>
+                </div>
+
+                <div name="SystemBTN-Container" id="SystemBTN-Container" class="SystemBTN-Container">
+                    <span name="SystemBTN-Text" id="SystemBTN-Text" class="SystemBTN-Text"> VIDEOS </span>
+
+                    <span name="SystemBTN-IconWrapper" id="SystemBTN-IconWrapper" class="SystemBTN-IconWrapper">
+                        <span name="SystemBTN-Icon" id="SystemBTN-Icon" class="material-icons"> movie </span>
+                    </span>
+                </div>
+
+                <div name="SystemBTN-Container" id="SystemBTN-Container" class="SystemBTN-Container">
+                    <span name="SystemBTN-Text" id="SystemBTN-Text" class="SystemBTN-Text"> PHOTOS </span>
+
+                    <span name="SystemBTN-IconWrapper" id="SystemBTN-IconWrapper" class="SystemBTN-IconWrapper">
+                        <span name="SystemBTN-Icon" id="SystemBTN-Icon" class="material-icons"> image </span>
+                    </span>
+                </div>
+
+                <div name="SystemBTN-Container" id="SystemBTN-Container" class="SystemBTN-Container">
+                    <span name="SystemBTN-Text" id="SystemBTN-Text" class="SystemBTN-Text"> MUSIC </span>
+
+                    <span name="SystemBTN-IconWrapper" id="SystemBTN-IconWrapper" class="SystemBTN-IconWrapper">
+                        <span name="SystemBTN-Icon" id="SystemBTN-Icon" class="material-icons"> headphones </span>
+                    </span>
+                </div>
+
+
+
+
+
+                <div name="SystemBTN-Container" id="SystemBTN-Container" class="SystemBTN-Container-1">
+                    <span name="SystemBTN-Text" id="SystemBTN-Text" class="SystemBTN-Text"> TERMINAL </span>
+
+                    <span name="SystemBTN-IconWrapper" id="SystemBTN-IconWrapper" class="SystemBTN-IconWrapper">
+                        <span name="SystemBTN-Icon" id="SystemBTN-Icon" class="material-icons"> terminal </span>
+                    </span>
+                </div>
+
+                <div name="SystemBTN-Container" id="SystemBTN-Container" class="SystemBTN-Container">
+                    <span name="SystemBTN-Text" id="SystemBTN-Text" class="SystemBTN-Text"> EDITOR </span>
+
+                    <span name="SystemBTN-IconWrapper" id="SystemBTN-IconWrapper" class="SystemBTN-IconWrapper">
+                        <span name="SystemBTN-Icon" id="SystemBTN-Icon" class="material-icons"> edit </span>
+                    </span>
+                </div>
+
+                <div name="SystemBTN-Container" id="SystemBTN-Container" class="SystemBTN-Container">
+                    <span name="SystemBTN-Text" id="SystemBTN-Text" class="SystemBTN-Text"> BROWSER </span>
+
+                    <span name="SystemBTN-IconWrapper" id="SystemBTN-IconWrapper" class="SystemBTN-IconWrapper">
+                        <span name="SystemBTN-Icon" id="SystemBTN-Icon" class="material-icons"> web </span>
+                    </span>
+                </div>
+
+                <div name="SystemBTN-Container" id="SystemBTN-Container" class="SystemBTN-Container">
+                    <span name="SystemBTN-Text" id="SystemBTN-Text" class="SystemBTN-Text"> EXPLORER </span>
+
+                    <span name="SystemBTN-IconWrapper" id="SystemBTN-IconWrapper" class="SystemBTN-IconWrapper">
+                        <span name="SystemBTN-Icon" id="SystemBTN-Icon" class="material-icons"> folder </span>
+                    </span>
+                </div>
+
+                <div name="SystemBTN-Container" id="SystemBTN-Container" class="SystemBTN-Container">
+                    <span name="SystemBTN-Text" id="SystemBTN-Text" class="SystemBTN-Text"> CALCULATOR </span>
+
+                    <span name="SystemBTN-IconWrapper" id="SystemBTN-IconWrapper" class="SystemBTN-IconWrapper">
+                        <span name="SystemBTN-Icon" id="SystemBTN-Icon" class="material-icons"> calculate </span>
+                    </span>
+                </div>
+            </container>
+        </window>
+
+        <script type="text/javascript" src="ROOT.CORE/ASSETS.CODE/JAVASCRIPT/index.js"></script>
+        <script type="text/javascript" src="ROOT.CORE/ASSETS.CODE/JAVASCRIPT/main.js"> </script>
+    </body>
+</html>
